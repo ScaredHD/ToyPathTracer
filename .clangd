@@ -1,0 +1,30 @@
+CompileFlags:
+  Add: [
+    --target=x86_64-w64-mingw, '-Wall'
+]
+
+Index:
+  StandardLibrary: No
+
+Diagnostics:
+  ClangTidy:
+    Add: [
+      modernize*,
+      bugprone*,
+      performance*,
+      readability*,
+      cppcoreguidelines*
+    ]
+    Remove: [
+      modernize-use-trailing-return-type,
+      modernize-use-nodiscard,
+      modernize-avoid-c-arrays,
+      bugprone-easily-swappable-parameters,
+      readability-identifier-length,
+      cppcoreguidelines-avoid-magic-numbers,
+      cppcoreguidelines-special-member-functions,
+      cppcoreguidelines-prefer-member-initializer,
+      cppcoreguidelines-pro-bounds-constant-array-index,
+      cppcoreguidelines-avoid-non-const-global-variables,
+      readability-magic-numbers
+    ]
