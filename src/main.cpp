@@ -28,27 +28,27 @@ int main() {
 
     // ------------ Scene 1 ------------
 
-    // std::cout << "render scene1:\n";
-    // scene->load_scene1();
+    std::cout << "render scene1:\n";
+    scene->load_scene1();
 
-    // timer.reset();
-    // renderer.render(*cam1);
-    // render_time = timer.reset();
+    timer.reset();
+    renderer.render(*cam1);
+    render_time = timer.reset();
 
-    // renderer.save_output("../../results/scene1.png");
-    // std::cout << "render time for scene 1: " << format_time(render_time) << "\n";
+    renderer.save_output("../../results/scene1.png");
+    std::cout << "render time for scene 1: " << format_time(render_time) << "\n";
 
     // ------------ Scene 2 ------------
 
-    // std::cout << "\nrender scene2:\n";
-    // scene->load_scene2();
+    std::cout << "\nrender scene2:\n";
+    scene->load_scene2();
 
-    // timer.reset();
-    // renderer.render(*cam1);
-    // render_time = timer.reset();
+    timer.reset();
+    renderer.render(*cam1);
+    render_time = timer.reset();
 
-    // renderer.save_output("../../results/scene2.png");
-    // std::cout << "render time for scene 2: " << format_time(render_time) << "\n";
+    renderer.save_output("../../results/scene2.png");
+    std::cout << "render time for scene 2: " << format_time(render_time) << "\n";
 
     // ------------ Scene 3 ------------
 
